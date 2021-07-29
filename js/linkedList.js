@@ -3,31 +3,31 @@ class LinkedList {
     this.head = new Nodo(null, null);
     this.tail = new Nodo(dato, null);
 
-    this.head.enlace  = this.tail;
+    this.head.enlace = this.tail;
 
     return this.head;
   }
 
   print(nodo) {
     let puntero = nodo;
-    let salida = ""
+    let salida = "";
 
     while (puntero) {
       const dato = puntero.getDato();
 
-      salida +=  `<span class="animate__animated animate__zoomIn  mx-1 fw-bold fs-3">  
+      salida += `<span class="mx-1 fw-bold fs-3">  
         <span class=" nodo bg-info">${dato ? dato : ""}</span>
         <span class="animate__animated  animate__slideInUp  bg-dark text-white">
           <i class="bi bi-arrow-right"></i>
         </span>
-      </span>`
+      </span>`;
       puntero = puntero.enlace;
     }
     salida += `<span class="animate__animated  animate__zoomIn fs-3 bg-dark text-white">
           <i class="bi bi-dash-circle"></i>
         </span>`;
 
-    document.querySelector("#datos").innerHTML = salida
+    document.querySelector("#datos").innerHTML = salida;
   }
 
   add(newNodo) {

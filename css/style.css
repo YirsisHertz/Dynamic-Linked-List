@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-*{
-  font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-.nodo{
+.nodo {
   display: inline-block;
   border-radius: 100%;
   padding: 1rem;
 }
 
-.footer{
+.footer {
   position: fixed;
   padding: 1rem;
   bottom: 0;
